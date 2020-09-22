@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// Import the react and reactDom library
+// Below is the JSX syntax
+import React from "react";
+import ReactDOM from "react-dom";
+// import keyword is used to import the things from the node_modules
+// require component is used to import the things which is common.
+// Create a react component
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// component maybe a class or function depends to create the HMTL.
+const App = () => {
+  return <div>Hi there!</div>;
+};
+// Take the react component and show it on screen.
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.querySelector("#root"));
